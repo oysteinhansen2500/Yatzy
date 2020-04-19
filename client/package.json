@@ -11,7 +11,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
-  "proxy": "http://87.248.16.163:8085",
+  "proxy": "http://87.248.16.163:80",
   "scripts": {
 
     "start": "cd client && react-scripts start",
