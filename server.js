@@ -164,7 +164,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.listen(process.env.PORT || 8085);
+
+var server = app.listen(process.env.PORT || 80, function () {
+   var port = server.address().port;
+   console.log("App now running on port", port);
+ });
 
 
 app.get('/api/hello', (req, res) => {
